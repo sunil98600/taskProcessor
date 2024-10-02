@@ -5,7 +5,7 @@ const path = require('path');
 // Configure the Bull queue with Redis
 const taskQueue = new Queue('taskQueue', {
     redis: {
-        host: 'redis', // Change to 'localhost' if running locally
+        host: 'localhost', // Change to 'redis' if running in docker container
         port: 6379,
     }
 });
