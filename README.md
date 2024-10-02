@@ -73,6 +73,19 @@ The app uses Node.js's `cluster` module to run multiple worker processes. This e
 ├── taskProcessor.js   # Task processing logic with Bull and Redis
 ├── logs/              # Directory to store task completion logs
 └── README.md          # This README file
+```
 
-'''
-jbjsjdcjs
+## Project Structure
+Task completion logs are stored in the logs/task_log.txt file. A sample log entry:
+```bash
+123 - task completed at 2024-10-01T20:18:13.582Z
+```
+
+## Dependencies
+
+- [express](https://www.npmjs.com/package/express)
+- [bull](https://www.npmjs.com/package/bull)
+- [redis](https://redis.io/)
+- [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+
+
